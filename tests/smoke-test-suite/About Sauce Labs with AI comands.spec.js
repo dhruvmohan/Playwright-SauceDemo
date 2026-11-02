@@ -23,6 +23,7 @@ test.describe('Smoke test to check if the User is able to login and access About
   // Test-Case Name
   records.forEach(data => {
     test(`${data.username} can log in and view About Sauce Labs with Auto Playwright @smoke`, async ({ page }) => {
+      test.skip(!process.env.GEMINI_API_KEY, 'Skipping AI test because GEMINI_API_KEY is not configured');
       test.setTimeout(120000);
       const inventoryPage = new InventoryPage(page);
       const loginPage = new LoginPage(page);
