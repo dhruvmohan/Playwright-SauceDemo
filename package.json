@@ -1,0 +1,33 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen https://www.saucedemo.com",
+    "mcp": "playwright-mcp"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.83",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "@zerostep/playwright": "^0.1.5",
+    "allure": "^3.22.1",
+    "allure-playwright": "^3.14.0",
+    "auto-playwright": "^1.16.1",
+    "dotenv": "^18.0.9"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "selenium-webdriver": "^4.51.0"
+  }
+}

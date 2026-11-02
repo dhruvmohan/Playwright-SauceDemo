@@ -1,0 +1,4 @@
+name,firstName,lastName,postalCode,expectedError
+missing first name,,Mohan,60486,Error: First Name is required
+missing last name,Dhruv,,60486,Error: Last Name is required
+missing postal code,Dhruv,Mohan,,Error: Postal Code is required

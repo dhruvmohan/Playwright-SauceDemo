@@ -1,0 +1,15 @@
+# Node Modules
+node_modules/
+
+# Playwright test artifacts & reports
+/test-results/
+/playwright-report/
+test-results.json
+allure-results/
+allure-report/
+
+# Gemini API keys
+.env
+
+
+

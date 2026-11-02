@@ -1,0 +1,6 @@
+name,username,password,expectedError
+invalid credentials,standard_user,wrong_password,Epic sadface: Username and password do not match any user in this service
+an empty username,,secret_sauce,Epic sadface: Username is required
+an empty password,standard_user,,Epic sadface: Password is required
+both fields empty,,,Epic sadface: Username is required
+locked_out_user account,locked_out_user,secret_sauce,"Epic sadface: Sorry, this user has been locked out."

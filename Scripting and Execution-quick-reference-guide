@@ -1,0 +1,81 @@
+
+/*
+ * ============================================================
+ * Scripting and Execution - QUICK REFERENCE GUIDE
+ * ============================================================
+ *
+ * 1. LOCATING ELEMENTS USING BROWSER DEVELOPER TOOLS
+ * ------------------------------------------------------------
+ * Open browser Developer Tools (F12) and navigate to the
+ * Elements tab to inspect and identify web elements.
+ *
+ * XPath Selector:
+ * $x('//button[@name="add-to-cart-sauce-labs-backpack"]')
+ * - Finds elements matching the specified XPath expression.
+ *
+ * CSS Selector:
+ * $('button[name="add-to-cart-sauce-labs-backpack"]')
+ * - Finds the first element matching the CSS selector.
+ *
+ * JavaScript DOM Selector:
+ * document.querySelector('button[name="add-to-cart-sauce-labs-backpack"]')
+ * - Returns the first matching element using JavaScript.
+ *
+ *
+ * 2. RECORDING PLAYWRIGHT TESTS
+ * ------------------------------------------------------------
+ * npx playwright codegen https://www.saucedemo.com
+ * - Launches Playwright Codegen to record browser interactions
+ *   and automatically generate test scripts.
+ *
+ *
+ * 3. EXECUTING PLAYWRIGHT TESTS
+ * ------------------------------------------------------------
+ * npx playwright test
+ * - Executes all tests in headless mode by default.
+ *
+ * npx playwright test --headed
+ * - Executes tests with the browser window visible.
+ *
+ * npx playwright test --ui
+ * - Opens Playwright's interactive UI Mode for running,
+ *   inspecting, and debugging tests.
+ *
+ * npx playwright test login.spec.js
+ * - Executes only the tests in the login.spec.js file.
+ *
+ *
+ * 4. DEBUGGING AND FILTERING TESTS
+ * ------------------------------------------------------------
+ * npx playwright test --debug
+ * - Launches Playwright Inspector to debug tests step by step.
+ *
+ * npx playwright test --grep "@smoke"
+ * - Executes only tests whose titles or tags match "@smoke".
+ *
+ *
+ * 5. VIEWING TEST EXECUTION REPORTS
+ * ------------------------------------------------------------
+ * npx playwright show-report
+ * - Opens the Playwright HTML report to review test results,
+ *   execution details, screenshots, and traces when available.
+ *
+ * npx allure serve allure-results
+ * - Generates and opens an Allure report from existing
+ *   Allure test results (requires Allure CLI).
+ *
+ *
+ * 6. RUNNING TESTS USING NPM SCRIPTS
+ * ------------------------------------------------------------
+ * npm test
+ * - Executes the default test script defined in package.json.
+ *
+ * npm run test:headed
+ * - Executes the custom test:headed script in package.json.
+ *
+ * npm run test:ui
+ * - Executes the custom test:ui script in package.json.
+ 
+ *
+ * ============================================================
+ */
